@@ -40,3 +40,7 @@ when profile is open and at same time trying to  open app menu it will overlap.
 ### Note:
 Images used in profile may be copyrighted used here for educational project purpose.Google font icons are free icons  used in pages.
 Gmail logo and other google logos are copyrighted to google.
+
+
+## Updates
+New features will be added in future.
