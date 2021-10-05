@@ -1,0 +1,420 @@
+*{
+  margin:0;
+  padding: 0;
+  color: black;
+}
+
+nav {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  background-color: white;
+}
+
+
+
+.App-menu {
+  display: none;
+  border-radius: 20px;
+  position: fixed;
+  top: 66px;
+  right: 1vw;
+  width: 18vw;
+  z-index: 3;
+  background-color: white;
+  height: 60%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  box-shadow: 1px 1px 3px black;
+  z-index: 4;
+}
+
+.App-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-info {
+  display: none;
+  border-radius: 20px;
+  position: fixed;
+  top: 66px;
+  right: 8px;
+  width: 24vw;
+  z-index: 3;
+  background-color: white;
+  height: 60%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  text-align: center;
+  box-shadow: 3px 2px 10px black;
+  z-index: 2;
+}
+
+.user-info>.account-info {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  overflow: auto;
+  width: 80px;
+  margin-bottom: 50px;
+}
+
+.account-info>div {
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid rgb(221, 150, 150);
+  right: 0px;
+  border-radius: 30px;
+  padding: 6px 8px;
+  background-color: white;
+  box-shadow: 1px 1px 2px seagreen;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 3fr);
+  row-gap: 10px;
+  column-gap: 30px;
+  margin: 20px 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.flex-container a:hover, .flex-container>div:hover {
+  background-color: lightgrey;
+  background-size: contain;
+  padding: auto;
+  color: black;
+}
+
+td:nth-child(4) {
+  padding: 3px 10px 0px 100px;
+}
+
+tr>td:nth-child(5) {
+  padding-left: 200px;
+}
+
+
+
+table td {
+  border-bottom: 2px solid gainsboro;
+}
+
+
+table tr >td >span:hover{
+  cursor: pointer;
+}
+
+td:last-child{
+  padding:0 50px;
+}
+tr:hover{
+  box-shadow: 1px 0px 8px black;
+
+
+}
+
+nav div>ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #9d9ea0;
+  padding: 10px 15px;
+}
+
+input[type="search"] {
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 2px;
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  background-color: blue;
+  border: none;
+  box-shadow: 1px 2px 5px silver;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+}
+
+.more-info {
+  max-width: 155px;
+  margin-bottom: 10px;
+  margin: 32px auto;
+}
+
+.more-info>input {
+  color: blue;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.more-info>input:hover {
+  background-color: rgb(223, 250, 255);
+}
+
+.profile {
+  position: relative;
+  width: 200px;
+  border: 2px solid red;
+  height: 50px;
+}
+
+.profile-info {
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  padding: 10px 0;
+}
+
+.profile-info>a {
+  margin: 0px 10px;
+}
+
+.input-box {
+  position: relative;
+  width: 35vw;
+  padding: 5px 20px;
+  background-color: #f1f3f4;
+  height: 3vw;
+}
+
+.icon {
+  position: absolute;
+}
+
+.sidemenu {
+  max-width: 25vw;
+  height: 40vh;
+  overflow-y: scroll;
+  text-align: left;
+  scroll-behavior: smooth;
+}
+
+.sidemenu>ul li {
+  margin-right: 10px;
+  list-style: none;
+  padding: 4px 10px;
+  margin-left: -30px;
+}
+
+.sidemenu li a:in-range {
+  color: black;
+}
+
+.sidemenu>ul li.active, .active>a .material-icons, .active>a {
+  background-color: #fce8e6;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: red;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  color: #707071;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.star::before {
+  content: " star";
+}
+
+.inbox::before {
+  content: "inbox";
+}
+
+.snooze::before {
+  content: "watch_later";
+}
+
+.drafts::before {
+  content: "insert_drive_file";
+}
+
+.categories::before {
+  content: "label";
+}
+
+.important::before {
+  content: "label_important";
+}
+
+.sent::before {
+  content: "send";
+}
+
+.imp::before {
+  content: "label";
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.extra {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.extra>a {
+  margin: 25px 10px;
+}
+
+.container-1 {
+  display: flex;
+  width: 100%;
+}
+
+.container-1 .sidebar-1 {
+  position: fixed;
+  top: 80px;
+  height: 100vh;
+  overflow: hidden;
+  left: 15px;
+}
+
+.sidebar-2 {
+  position: fixed;
+  width: 4vw;
+  top: 80px;
+  right: 0px;
+  margin-left: 10px;
+  border-left: 1px solid gainsboro;
+}
+
+main .email-messages {
+  width: 75vw;
+  top: 100px;
+  position: relative;
+  left: 300px;
+}
+
+/*  search box css */
+
+.height {
+  height: 10vh;
+}
+
+.search {
+  position: fixed;
+  width: 43em;
+  top: 10px;
+  left: 300px;
+}
+
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+  /* box-shadow: 0 0 40px rgba(51, 51, 51, .1); */
+  background-color: #f1f3f4;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid blue;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+
+.search span {
+  position: absolute;
+  top: 20px;
+  right: 2px;
+  height: 50px;
+  width: 100px;
+}
+
+#scroller {
+  overflow-x: scroll;
+  height: 700px;
+  position: fixed;
+  top: 150px;
+
+  left: 21vw;
+  padding: 4px;
+}
+
+.account-info {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  top: 50px;
+}
+
+.hidemenu{
+  display: none;
+}
+
+.email-mess{
+    width: 75vw;
+}
+
+.email-mess-inc{
+  width:78vw;
+}

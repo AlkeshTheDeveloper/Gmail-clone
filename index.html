@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>inbox-gmail</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<body>
+    <nav class="p-1">
+        <div class="logo position-fixed">
+            <a href=""><span class="fas fa-bars" style="color: black"></span></a>
+            <a href=""><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png"
+                    srcset="
+              https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png 1x,
+              https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png 2x
+            " alt="" aria-hidden="true" style="width: 109px; height: 40px" alt="" /></a>
+        </div>
+
+        <div class="search-box">
+            <div class="container">
+                <div class="row height d-flex justify-content-center align-items-center">
+                    <div class="col-md-8 mx-auto">
+                        <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control"
+                                placeholder="Search mail"> <span class="material-icons">
+                                tune
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="profile-info">
+            <a href=""><span class="material-icons">
+                    help_outline
+                </span></a>
+            <a href=""><span class="material-icons">
+                    settings
+                </span></a><a href="" onclick="visibleDropdown('dropdown1')"><span class="material-icons">
+                    apps
+                </span></a>
+
+            <a href="" id="profile-pic " class="text-decoration-none">
+
+                <span class=" p-0  d-inline-block" data-toggle="tooltip" data-placement="bottom"
+                    title="Tooltip on bottom"><img class="rounded-circle"
+                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=25"
+                        alt="" onclick="visibleDropdown('dropdown2')"></span>
+
+            </a>
+
+        </div>
+
+        <div class="user-info" id="dropdown2">
+            <div class="account-info">
+                <img src="./images/profile.jpeg" alt="" width="80px" height="100px">
+                <div><i class="fa fa-camera" aria-hidden="true"></i></div>
+            </div>
+            <div class="account-details">
+                <h5>Albert EInstein</h5>
+                <p>alberteinsten@gmail.com</p>
+                <input type="button" value="Manage your Google Account" class="w-75 text-center p-2">
+            </div>
+            <hr>
+            <div class="add-anothor">
+
+                <p><span class="material-icons text-lg-end">
+                        person_add_alt </span>Add another account</p>
+                <input type="button" value=" Sign out of all devices" class="w-75 text-center p-2">
+
+            </div>
+            <hr>
+        </div>
+
+        <div class="App-menu" id="dropdown1">
+            <div class="flex-container">
+
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/chat.png" alt="" width="40" height="40">
+                        <p>Chat</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Drive.png" alt="" width="40" height="40">
+                        <p>Drive</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google-Photos-logo.png" alt="" width="40" height="40">
+                        <p>Photos</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/Google_Duo_icon.svg.png" alt="" width="40" height="40">
+                        <p>DUO</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/Google_News_icon.svg.png" alt="" width="40" height="40">
+                        <p>News</p>
+                    </a></div>
+                <div><a href="#"> <img src="./images/google-icon.png" alt="" width="40" height="40">
+                        <p>Account</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/googlemaps.jfif" alt="" width="40" height="40">
+                        <p>Maps</p>
+                    </a></div>
+
+                <div><a href="#"><img src="./images/chat.png" alt="" width="40" height="40">
+                        <p>Chat</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Drive.png" alt="" width="40" height="40">
+                        <p>Drive</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google-Photos-logo.png" alt="" width="40" height="40">
+                        <p>Photos</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/chat.png" alt="" width="40" height="40">
+                        <p>Chat</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Drive.png" alt="" width="40" height="40">
+                        <p>Drive</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google-Photos-logo.png" alt="" width="40" height="40">
+                        <p>Photos</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+                    </a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="flex-container">
+
+                <div><a href="#"><span class="shadowing"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt=""
+                                width="40" height="40">
+                            <p>Calendar</p>
+                        </span>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/chat.png" alt="" width="40" height="40">
+                        <p>Chat</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Drive.png" alt="" width="40" height="40">
+                        <p>Drive</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google-Photos-logo.png" alt="" width="40" height="40">
+                        <p>Photos</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/Google_Duo_icon.svg.png" alt="" width="40" height="40">
+                        <p>DUO</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/Google_News_icon.svg.png" alt="" width="40" height="40">
+                        <p>News</p>
+                    </a></div>
+                <div><a href="#"> <img src="./images/google-icon.png" alt="" width="40" height="40">
+                        <p>Account</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/googlemaps.jfif" alt="" width="40" height="40">
+                        <p>Maps</p>
+                    </a></div>
+
+                <div><a href="#"><img src="./images/chat.png" alt="" width="40" height="40">
+                        <p>Chat</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Drive.png" alt="" width="40" height="40">
+                        <p>Drive</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google-Photos-logo.png" alt="" width="40" height="40">
+                        <p>Photos</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./images/chat.png" alt="" width="40" height="40">
+                        <p>Chat</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Drive.png" alt="" width="40" height="40">
+                        <p>Drive</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google-Photos-logo.png" alt="" width="40" height="40">
+                        <p>Photos</p>
+                    </a></div>
+                <div><a href="#"><img src="./images/Google_Calendar_icon_(2020).svg.png" alt="" width="40" height="40">
+                        <p>Calendar</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="more-info">
+                <input type="button" value="More From Google">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-1">
+        <div class="sidebar-1">
+
+            <button type="button" class="btn bg-lightest rounded-pill my-3 px-3 " id="mailit"><img
+                    src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png" alt=""
+                    class="mx-2">compose</button>
+
+            <div class="sidemenu">
+
+                <ul>
+                    <li class="active">
+                        <a href="#"><span class="material-icons inbox px-2"></span>Inbox</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons star px-2"></span>Starred</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons snooze px-2"></span>Snoozed</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons important px-2"></span> Important</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons sent px-2"></span> Sent</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons drafts px-2"> </span>Drafts</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons categories px-2"></span> Categories</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons imp px-2"></span> Imp</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="my-4">
+                <h6 class="mx-5">MEET</h6>
+                <ul class="list-unstyled  p-4">
+                    <li>
+                        <a href="https://meet.google.com/"><span class="material-icons px-2">videocam</span>
+                            New meeting</a>
+                    </li>
+                    <li>
+                        <a href="https://meet.google.com/"><span class="material-icons  px-2">keyboard</span>
+                            Join a meeting</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <section class=" email-messages position-fixed">
+            <div class="container-fluid">
+                <div class="row p-1">
+                    <div class="col-md-1 d-flex flex-row align-items-center justify-content-start ">
+                        <input type="checkbox" name="foo" id="selectall" onclick="toggle(this)"><span
+                            class="material-icons">
+                            arrow_drop_down
+                        </span> <span class="material-icons">
+                            refresh
+                        </span> <span class="material-icons">
+                            more_vert
+                        </span>
+                    </div>
+
+                </div>
+
+                <hr>
+
+        </section>
+        <div class="email-mess" id="scroller">
+            <div class="col-md-7">
+                <ul class="d-flex list-unstyled justify-content-between ">
+                    <li><a href="#primary"><span class="material-icons px-3">inbox</span>Primary</a></li>
+                    <li><a href="#social"><span class="material-icons px-3">group</span>Social</a></li>
+                    <li><a href="#promotions"><span class="material-icons px-3">local_offer</span>Promotions</a></li>
+
+                </ul>
+
+            </div>
+            <hr>
+            <table id="trevent">
+                <tr id="tr-1">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-1" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-1"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+                <tr id="tr-2">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-2" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-2"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-3">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-3" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-3"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-4">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-4" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-4"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-5">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-5" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-5"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-6">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-6" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-6"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-7">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-7" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-7"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-8">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-8" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-8"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-9">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-9" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-9"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+                <tr id="tr-10">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-10" onclick="chngimg(this.id)">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-10"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-11">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-11" onclick="chngimg(this.id)"
+                            onmouseover="this.style.cursor='pointer'">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-11"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+                <tr id="tr-11">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-11" onclick="chngimg(this.id)"
+                            onmouseover="this.style.cursor='pointer'">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-11"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+                <tr id="tr-11">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-11" onclick="chngimg(this.id)"
+                            onmouseover="this.style.cursor='pointer'">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-11"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+                <tr id="tr-11">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-11" onclick="chngimg(this.id)"
+                            onmouseover="this.style.cursor='pointer'">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-11"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+                <tr id="tr-11">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-11" onclick="chngimg(this.id)"
+                            onmouseover="this.style.cursor='pointer'">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-11"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+                <tr id="tr-11">
+                    <td><input type="checkbox" name="foo" id=""></td>
+                    <td> <span class="material-icons " id="star-11" onclick="chngimg(this.id)"
+                            onmouseover="this.style.cursor='pointer'">star_border</span></td>
+                    <td><img src="images/labelu.png" width="18" height="15" id="lab-11"
+                            onmouseover="this.style.cursor='pointer'" class="labip" onclick="chnglab(this.id)" /></td>
+                    <td class="">
+                        <p>Indeed</p>
+                    </td>
+                    <td>Apply to jobs at Accesscorner, Smarter Codes and Zauca Consultancy Services</td>
+                    <td>7:30PM</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <aside class="sidebar-2" id="sidebar2">
+
+            <div class="extra">
+                <a href=""><img src="https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png" alt=""
+                        width="20"></a>
+                <a href=""><img src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png" alt=""
+                        width="20"></a>
+                <a href=""><i class="material-icons">
+                        task_alt
+                    </i></a>
+
+                <a href=""><i class="material-icons">
+                        account_circle
+                    </i></a>
+
+                <div>
+                    <hr>
+                    <br>
+                    <span class="material-icons">
+                        add
+                    </span>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+    <div id="create-mail"
+        class="  h-75 position-absolute bottom-0 mx-2 end-0  d-flex flex-row-reverse justify-content-between">
+
+    </div>
+    <div class="position-absolute bottom-0 my-5  mx-2  p-2 bg-dark end-0  border  rounded-circle pointer-event" id="right-hider">
+     <a href="#"><span class="material-icons rounded-circle text-white" id="right-arrow" style="z-index: 2;">
+             chevron_right
+         </span>
+</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
