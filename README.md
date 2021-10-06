@@ -33,6 +33,11 @@ when profile is open and at same time trying to  open app menu it will overlap.
 <hr>
 <ul>
 <li>Font awesome</li>
+</ul>
+
+## Hosted Url
+https://alkeshthedeveloper.github.io/Gmail-clone/
+
 <li>Google font icons</li>
 
 </ul>
