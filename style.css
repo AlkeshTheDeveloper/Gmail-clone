@@ -418,3 +418,8 @@ main .email-messages {
 .email-mess-inc{
   width:78vw;
 }
+
+
+.closebutton{
+  cursor: pointer;
+}

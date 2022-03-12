@@ -60,33 +60,33 @@ function visibleDropdown(id) {
   event.preventDefault();
 }
 
-document.getElementById("dropdown1").addEventListener("pointerleave", () => {
-  event.preventDefault();
-  document.getElementById("dropdown1").style.display = "none";
-});
+document
+  .getElementById("dropdown1")
+  .addEventListener("pointerleave", (event) => {
+    event.preventDefault();
+    document.getElementById("dropdown1").style.display = "none";
+  });
 
-document.getElementById("dropdown2").addEventListener("pointerleave", () => {
-  event.preventDefault();
-  document.getElementById("dropdown2").style.display = "none";
-});
-
-
+document
+  .getElementById("dropdown2")
+  .addEventListener("pointerleave", (event) => {
+    event.preventDefault();
+    document.getElementById("dropdown2").style.display = "none";
+  });
 
 let mailclient = document.getElementById("create-mail");
-  
-
 
 document.getElementById("mailit").addEventListener("click", () => {
-  const senderMail = `<div class="container  bg-light mx-2  " style="width:38vw;border-radius:30px;z-index:3">
-  <div class="mb-3 row bg-black text-white ">
-   <div class="col-9"><p>New Message</p></div>
+  const senderMail = `<div class="container  bg-light mx-2" style="width:38vw;border-radius:30px;z-index:3">
+  <div class="mb-3 row bg-black">
+   <div class="col-9"><p class="text-white">New Message</p></div>
    <div class="col-3 d-flex justify-content-end px-1">
-    <span class="material-icons">remove
-</span><span class="material-icons">
+    <span class="material-icons closebutton">remove
+</span><span class="material-icons closebutton">
 open_in_full
 
-</span><span class="material-icons" id="closebutton">
-close
+</span><span class="material-icons closebutton" onclick="this.parentElement.parentElement.parentElement.style.display = 'none'">
+    close
 </span>
    </div>
   </div>
@@ -118,7 +118,7 @@ close
   
   `;
 
-    mailclient.insertAdjacentHTML("beforeend", senderMail);
+  mailclient.insertAdjacentHTML("beforeend", senderMail);
 });
 
 document.getElementById("right-hider").addEventListener('click', () => {
