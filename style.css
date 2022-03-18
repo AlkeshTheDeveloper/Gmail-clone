@@ -1,5 +1,5 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   color: black;
 }
@@ -88,7 +88,8 @@ nav {
   text-align: center;
 }
 
-.flex-container a:hover, .flex-container>div:hover {
+.flex-container a:hover,
+.flex-container>div:hover {
   background-color: lightgrey;
   background-size: contain;
   padding: auto;
@@ -110,18 +111,19 @@ table td {
 }
 
 
-table tr >td >span:hover{
+table tr>td>span:hover {
   cursor: pointer;
 }
 
-td:last-child{
-  padding:0 50px;
+td:last-child {
+  padding: 0 50px;
 }
-tr:hover{
+
+tr:hover {
   box-shadow: 1px 0px 8px black;
-
-
 }
+
+
 
 nav div>ul li {
   display: inline-block;
@@ -221,7 +223,9 @@ button {
   color: black;
 }
 
-.sidemenu>ul li.active, .active>a .material-icons, .active>a {
+.sidemenu>ul li.active,
+.active>a .material-icons,
+.active>a {
   background-color: #fce8e6;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -407,19 +411,24 @@ main .email-messages {
   top: 50px;
 }
 
-.hidemenu{
+.hidemenu {
   display: none;
 }
 
-.email-mess{
-    width: 75vw;
+.email-mess {
+  width: 75vw;
 }
 
-.email-mess-inc{
-  width:78vw;
+.email-mess-inc {
+  width: 78vw;
 }
 
 
-.closebutton{
+.closebutton {
   cursor: pointer;
+}
+
+#scroller>div>ul>li{
+ display: flex;
+ align-items: center;
 }
